@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
   },
   "author": "",
   "license": "ISC",
@@ -12,7 +16,9 @@
     "phantomjs": "^2.1.7"
   },
   "devDependencies": {
-    "lite-server": "^2.2.2"
+    "concurrently": "^3.0.0",
+    "lite-server": "^2.2.2",
+    "tsc": "^1.20150623.0"
   },
   "repository": {
     "type": "git",
