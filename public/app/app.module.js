@@ -5,12 +5,11 @@
 
   app.AppModule = NgModule({
     imports: [BrowserModule],
-    declarations: [AppComponent],
+    declarations: [AppComponent, app.SpotifyIframePlayerComponent],
     providers: [],
     bootstrap: [AppComponent]
   })
   .Class({
     constructor: function() { }
   });
-
 })(window.app || (window.app = {}));

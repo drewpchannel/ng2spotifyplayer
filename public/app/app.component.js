@@ -4,8 +4,10 @@
   app.AppComponent = Component({
     selector: 'my-app',
     template:
-      '<h1>Spotify Iframe Player</h1>' +
-      '<spotify-iframe-player></spotify-iframe-player>'
+      `
+      <h1>Spotify Iframe Player</h1>
+      <spotifyiframeplayer></spotifyiframeplayer>
+      `
   })
   .Class({
     constructor: function AppComponent() { }
