@@ -1,4 +1,5 @@
 (function(app) {
+  debugger;
   var Component = ng.core.Component;
 
   app.SpotifyIframePlayerComponent = Component({
